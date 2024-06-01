@@ -1,0 +1,142 @@
+
+@import 'variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: $primary-color;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    color: $text-color;
+}
+
+header a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+header img {
+    width: 150px;
+}
+
+main {
+    padding: 75px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-33 {
+    width: calc(100% / 3);
+}
+
+.content {
+    margin: 10px;
+}
+
+.content img {
+    width: 100%;
+}
+
+.brand {
+    font-size: 12px;
+}
+
+.card-text p {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.price {
+    font-weight: 700;
+    color: $highlight-color;
+    font-size: 14px;
+}
+
+.old-price {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.card-image {
+    position: relative;
+}
+
+.labels {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px;
+    color: $text-color;
+    margin-right: 5px;
+}
+
+.red-label {
+    background-color: $label-red;
+}
+
+.green-label {
+    background-color: $label-green;
+}
+
+.heart {
+    background-color: $text-color;
+    padding: 5px 10px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.hover-image {
+    display: none;
+}
+
+.card-image:hover .main-image {
+    display: none;
+}
+
+.card-image:hover .hover-image {
+    display: inline-block;
+}
+
+.heart:hover {
+    color: $label-red;
+}
+
+footer {
+    background-color: $secondary-color;
+    padding: 30px 0px;
+    color: $text-color;
+}
+
+footer a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.footer-col-33 {
+    width: calc(100% / 2);
+}

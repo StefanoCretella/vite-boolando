@@ -1,0 +1,185 @@
+/* CSS PERSONALIZZATO */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: rgba(255, 105, 0, 1);
+  padding: 10px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-content ul {
+  list-style-type: none;
+}
+
+.header-content ul li {
+  display: inline-block;
+  padding-top: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.header-content img {
+  width: 150px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+/* END HEADER */
+
+/* MAIN */
+main {
+  padding: 75px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-33 {
+  width: calc(100% / 3);
+  padding: 0 5px;
+}
+
+.content {
+  margin: 10px;
+}
+
+.content img {
+  width: 100%;
+}
+
+.brand {
+  font-size: 12px;
+}
+
+.card-text p {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.price {
+  font-weight: 700;
+  color: red;
+  font-size: 14px;
+}
+
+.old-price {
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.card-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card-image:hover img.hover-image {
+  transform: scale(1.05);
+}
+
+.labels {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  display: flex;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px;
+  color: white;
+  margin-right: 5px;
+}
+
+.red-label {
+  background-color: red;
+}
+
+.green-label {
+  background-color: green;
+}
+
+.heart {
+  background-color: white;
+  padding: 5px 10px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.hover-image {
+  display: none;
+}
+
+.card-image:hover .main-image {
+  display: none;
+}
+
+.card-image:hover .hover-image {
+  display: inline-block;
+}
+
+.heart:hover {
+  color: red;
+}
+/* END MAIN */
+
+/* FOOTER */
+footer {
+  background-color: rgba(26, 26, 26, 1);
+  padding: 30px 0px;
+}
+
+.Boolando {
+  color: white;
+  padding-bottom: 5px;
+  font-size: 21px;
+}
+
+.footer-content ul li {
+  display: inline-block;
+  padding-top: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-col-33 {
+  width: calc(100% / 2);
+}
+/* END FOOTER */
